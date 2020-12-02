@@ -106,8 +106,26 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+nav {
+  background-color: #262936;
+  color: #ccc;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-right: 10%;
+  font-size: 0.8rem;
+}
 
+.first-nav{
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+}
 
+nav li {
+  margin: 0 5px;
+}
 
 
 
@@ -119,10 +137,144 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.hero-upper  {
+  padding: 10px 0px;
+  position: absolute;
+  display: flex;
+  max-height: 100px;
+  width: 100%;
+  /* max-width: 100%; */
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-upper h1 {
+  flex-basis: 20%;
+}
 
 
+.hero-upper  form {
+  flex-basis: 60%;
+  display: flex;
+  align-items: stretch;
+}
 
+.hero-upper  form .form-element *{
+  padding: 0 30px;
+  border: 0;
+  margin: 0;
+  height: 100%;
+  max-height: 55px;
+  /* padding: 20px 50px; */
+}
 
+.hero-upper  form .form-element select {
+  background-color: #b31b40;
+  color: #fff;
+  flex-grow: 1;
+  text-align: center;
+  text-align-last:center;
+  justify-content: center;
+}
+.hero-upper  form .form-element option {
+  text-align: center;
+  justify-content: center;
+}
+.hero-upper  form .form-element:nth-child(1){
+  flex-grow: 1;
+  display: flex;
+}
+.hero-upper  form .form-element:nth-child(2){
+  flex-grow: 3;
+  display: flex;
+}
+
+.hero-upper  form .form-element input {
+  color: #000;
+  flex-grow: 1;
+  /* width: 100%; */
+}
+.hero-upper .language {
+  margin: 0 20px;
+  /* flex-basis: 20%; */
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.hero-upper .language img {
+
+  /* display: inline; */
+  height: auto;
+  width: auto;
+}
+.hero-upper .language select{
+  display: inline;
+  /* flex-basis: 10%; */
+}
+
+.hero-upper span img {
+  display: inline-block;
+  /* max-height: 100%; */
+  /* max-width: 100%; */
+}
+.hero-upper h1 a{
+  display: block;
+  max-height: 100%;
+}
+
+.hero-upper h1 a img {
+  /* display: block; */
+  /* max-height:100%; max-width:100%; */
+  /* width: 100%; */
+}
+
+.hero-lower {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  transform:  translateY(-50%);
+  text-transform: uppercase;
+  display: flex;
+  /* box-shadow: 2px 2px 10px -5px #777; */
+}
+
+.hero-lower li a {
+  color: #000;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.hero-lower li {
+  background-color: #fff;
+  padding: 20px;
+  flex-grow: 1;
+  box-shadow: 6px 5px 10px 0px #aaa;
+  text-align: center;
+}
+
+.hero-lower:before {
+  content: "";
+  padding: 20px;
+  background-color: #fff;
+  border-top-left-radius :50%;
+  border-bottom-left-radius :50%;
+  box-shadow: 6px 5px 5px 0px #aaa;
+}
+
+.hero-lower:after {
+  content: "";
+  padding: 20px;
+  background-color: #fff;
+  border-top-right-radius :50%;
+  border-bottom-right-radius :50%;
+  box-shadow: 5px 5px 5px 0px #aaa;
+}
 
 
 
