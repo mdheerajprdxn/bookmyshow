@@ -142,6 +142,7 @@ nav li {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  margin: 0;
 }
 
 .hero-upper  {
@@ -221,18 +222,10 @@ nav li {
 
 .hero-upper span img {
   display: inline-block;
-  /* max-height: 100%; */
-  /* max-width: 100%; */
 }
 .hero-upper h1 a{
   display: block;
   max-height: 100%;
-}
-
-.hero-upper h1 a img {
-  /* display: block; */
-  /* max-height:100%; max-width:100%; */
-  /* width: 100%; */
 }
 
 .hero-lower {
@@ -250,6 +243,7 @@ nav li {
   font-weight: 600;
   font-size: 0.9rem;
 }
+
 .hero-lower li {
   background-color: #fff;
   padding: 20px;
@@ -276,8 +270,164 @@ nav li {
   box-shadow: 5px 5px 5px 0px #aaa;
 }
 
+/* voucher enquiry */
+
+section {
+  margin: 50px 0;
+}
+
+.section-heading {
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-heading:after {
+  content: "";
+  display: block;
+  padding: 1px;
+  height: 1px;
+  width: 30px;
+  margin: auto;
+  border-bottom: 1px solid red;
+}
+.voucher {
+  margin-top: 30px;
+}
+.voucher-enquiry-content div:first-child img {
+  width: auto;
+}
+.voucher-enquiry-content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.voucher-enquiry-content div:first-child {
+  flex-basis: 40%;
+}
+
+.voucher-enquiry-content p {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #555;
+  
+  text-align:justify;
+  word-break:keep-all;
+}
+
+.voucher-enquiry-content form {
+  padding: 20px;
+  display: flex;
+  flex-basis: 50%;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 0 5px 5px #ccc;
+}
+
+.voucher-enquiry-content form> * {
+  flex-basis: 45%;
+  margin : 10px
+}
+
+.captcha {
+  max-height: 50px;
+  display: flex;
+  background-color: #eee;
+  padding: 5px;
+}
+
+.voucher-enquiry-content form input {
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+
+.voucher-enquiry-content form button {
+  background-color: #b31b40;
+  color: white;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  padding: 10px 0 ;
+  border-radius: 3px;
+}
+.voucher-enquiry-content form img {
+  /* object-fit: contain; */
+  /* height: 100%; */
+  /* max-height: 100%; */
+  width: auto;
+  /* width: 100%; */
+}
+
+/* PRODUCTS */
+
+.products-content{
+  display: flex;
+  align-items: stretch;
+  margin-top: 30px;
+}
+
+.product-titles {
+  flex-basis: 40%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #555;
+  /* align-items: center; */
+}
+
+.product-titles li {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 31px 10px;
+  box-sizing: border-box;
+}
+
+.product-list {
+  display: flex;
+}
+
+.product-list li {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.product-list li p {
+  flex-basis: 60%;
+  text-align: center;
+  color: #555;
+}
+
+.product-list li .img-container {
+
+  flex-basis: 20%;
+}
+.product-list li img {
+  /* margin: 20px 0; */
+  /* width: 100%; */
+}
+
+.product-list li:first-child {
+  display: flex;
+}
 
 
+.testimonials img {
+  width: auto;
+}
+footer {
+  width: auto;
+
+}
 
 /*=================================
   main styling ends here
