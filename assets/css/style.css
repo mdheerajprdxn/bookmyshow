@@ -425,6 +425,53 @@ section {
   width: auto;
 }
 
+/* FAQ */
+.faq-heading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  /* width: auto; */
+  /* margin: auto; */
+}
+
+.faq-heading li:first-child {
+  border-left: 1px solid #000;
+
+}
+.faq-heading li {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  background-color: #eee;
+  padding: 15px 35px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.faq-content {
+  display: flex;
+  flex-flow: column;
+}
+
+.faq-content li {
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/ 
+
+
 footer {
   padding: 40px;
   background-color: #37363B;
@@ -532,16 +579,6 @@ footer {
   font-size: 0.8rem;
   text-align: center;
 }
-
-/*=================================
-  main styling ends here
-=================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
 
 
 
