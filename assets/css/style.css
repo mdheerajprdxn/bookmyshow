@@ -123,6 +123,21 @@ nav {
   color: #fff;
 }
 
+.first-nav sup {
+  background-color: red;
+  color: #fff;
+  padding: 2px;
+  text-transform: uppercase;
+}
+
+.second-nav sup {
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  background-color: red;
+  color: #fff;
+  text-transform: uppercase;
+}
 nav li {
   margin: 0 5px;
 }
@@ -170,20 +185,28 @@ nav li a:hover {
 }
 
 .hero-upper  {
-  padding: 10px 0px;
-  position: absolute;
+  padding: 10px 40px;
   display: flex;
-  max-height: 100px;
-  width: 100%;
-  /* max-width: 100%; */
+  left: 0;
+  right: 0;
+  position: absolute;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-upper h1 {
-  flex-basis: 20%;
+  flex-basis: 300px;
 }
 
+.hero-upper h1 a{
+  max-height: 100%;
+  max-width: 250px;
+}
+
+.hero-upper h1 a img{
+  max-height: 100%;
+  width: 100%;
+}
 
 .hero-upper  form {
   flex-basis: 60%;
@@ -206,12 +229,19 @@ nav li a:hover {
   flex-grow: 1;
   text-align: center;
   text-align-last:center;
+  text-transform: uppercase;
   justify-content: center;
+  font-size: 1.1rem;
+}
+.hero-upper  form .form-element select option:before {
+  content: 'hi';
+  font-size: 5rem;
 }
 .hero-upper  form .form-element option {
   text-align: center;
   justify-content: center;
 }
+
 .hero-upper  form .form-element:nth-child(1){
   flex-grow: 1;
   display: flex;
@@ -226,6 +256,13 @@ nav li a:hover {
   flex-grow: 1;
   /* width: 100%; */
 }
+
+
+.hero-upper  form .form-element input::placeholder {
+  color: #000;
+  font-weight: 800;
+}
+
 .hero-upper .language {
   margin: 0 20px;
 }
@@ -236,14 +273,10 @@ nav li a:hover {
 }
 .hero-upper .language select{
   display: inline;
-}
-
-.hero-upper span img {
-  display: inline-block;
-}
-.hero-upper h1 a{
-  display: block;
-  max-height: 100%;
+  padding: 5px 40px 5px 5px;
+  border-radius: 5px;
+  color: #555;
+  font-size: 0.8rem;
 }
 
 .hero-lower {
@@ -362,8 +395,12 @@ section {
   display: flex;
   background-color: #eee;
   padding: 5px;
+  /* align-items: center; */
 }
 
+.captcha label {
+  flex-grow: 1;
+}
 .voucher-enquiry-content form input {
   padding: 10px 10px;
   box-sizing: border-box;
@@ -378,12 +415,13 @@ section {
   padding: 10px 0 ;
   border-radius: 3px;
 }
+.voucher-enquiry-content form .captcha-img {
+  display: inline-block;
+  flex-basis: 200px;
+}
 .voucher-enquiry-content form img {
-  /* object-fit: contain; */
-  /* height: 100%; */
-  /* max-height: 100%; */
+  max-height: 100%;
   width: auto;
-  /* width: 100%; */
 }
 
 /* Campaigns */
