@@ -553,6 +553,9 @@ section { margin: 50px 0; }
   font-size: 0.9rem;
 }
 
+.faq-content>li ul li a { color: #000; }
+.faq-content>li ul li a:hover { color: #555; }
+
 .faq-content li ul li::before {
   margin: 2px;
   content: "\f138";
