@@ -275,7 +275,7 @@ nav li a:hover {  color: #fff; }
   transition: all 0.3s ease;
 }
 
-.hero-lower li a:hover { border-bottom: 2px solid #000;}
+.hero-lower li a:hover { border-bottom: 2px solid #000; }
 
 .hero-lower li {
   padding: 20px;
@@ -345,7 +345,7 @@ section { margin: 50px 0; }
 }
 
 .voucher .download figcaption a { color: inherit; }
-.voucher { margin-top: 30px;}
+.voucher { margin-top: 30px; }
 .voucher-enquiry-content div:first-child img { width: auto; }
 
 .voucher-enquiry-content {
