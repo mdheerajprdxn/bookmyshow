@@ -127,6 +127,30 @@ nav li {
   margin: 0 5px;
 }
 
+nav li a {
+  color: #ccc;
+}
+
+nav li a:hover {
+  color: #fff;
+}
+.icon-f {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.home:before {
+  content: "\f015";
+}
+
+.bell:before {
+  content: "\f0f3";
+}
+
+.location:before {
+  content: "\f3c5";
+}
+
 
 
 
@@ -204,20 +228,14 @@ nav li {
 }
 .hero-upper .language {
   margin: 0 20px;
-  /* flex-basis: 20%; */
-  /* display: flex; */
-  /* align-items: center; */
 }
 
 .hero-upper .language img {
-
-  /* display: inline; */
   height: auto;
   width: auto;
 }
 .hero-upper .language select{
   display: inline;
-  /* flex-basis: 10%; */
 }
 
 .hero-upper span img {
@@ -235,13 +253,20 @@ nav li {
   transform:  translateY(-50%);
   text-transform: uppercase;
   display: flex;
-  /* box-shadow: 2px 2px 10px -5px #777; */
 }
 
 .hero-lower li a {
   color: #000;
   font-weight: 600;
   font-size: 0.9rem;
+  /* width: 100%; */
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.hero-lower li a:hover {
+  border-bottom: 2px solid black;
 }
 
 .hero-lower li {
@@ -361,6 +386,13 @@ section {
   /* width: 100%; */
 }
 
+/* Campaigns */
+
+.campaigns img {
+  width: auto;
+}
+
+
 /* PRODUCTS */
 
 .products-content{
@@ -462,6 +494,14 @@ section {
   font-size: 0.9rem;
 }
 
+.faq-content li::before {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f138";
+  font-weight: 900;
+  font-size: 1.2rem;
+  margin: 2px;
+  color: #555;
+}
 
 /*=================================
   main styling ends here
@@ -546,24 +586,13 @@ footer {
   content: "";
   padding: 1px;
   display: inline-block;
-  background-color: #fff;
+  background-color: #ccc;
   width: 100%;
   position: absolute;
   top: 50%;
   left: 0;
   z-index: -1;
 }
-/* 
-.footer-heading a::after {
-  content: "";
-  padding: 1px;
-  display: inline-block;
-  background-color: #fff; 
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  right: 0;
-} */
 
 .footer-heading a img {
   display: inline-block;
@@ -573,6 +602,23 @@ footer {
   background-color: #37363B;
 }
 
+.social-media {
+  text-align: center;
+}
+
+.social-media .icon-b {
+  padding: 10px;
+  background-color: #777;
+  color: #37363B;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 7px;
+}
+
+.social-media a.icon-b:hover {
+  background-color: #ccc;
+}
 .copyright {
   display: flex;
   flex-flow: column;
@@ -580,9 +626,26 @@ footer {
   text-align: center;
 }
 
+/* ICONS */
 
+.social-media a {
+  font-size: 0;
+}
 
+.icon-b {  font-family: 'Font Awesome 5 Brands';
+}
 
+.icon-b:before {
+  font-size: 1rem;
+
+}
+.facebook::before {  content: "\f39e"; }
+.twitter:before {  content: "\f099";}
+.instagram:before {  content: "\f16d";}
+.youtube:before {  content: "\f167";}
+.pintrest:before {  content: "\f0d2";}
+.google-plus:before {  content: "\f0d5";}
+.linkedin:before {  content: "\f0e1";}
 
  /*=================================
   footer styling ends here
