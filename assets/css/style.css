@@ -139,9 +139,9 @@ nav {
   text-transform: uppercase;
 }
 
-nav li {  margin: 0 5px;}
-nav li a {  color: #ccc;}
-nav li a:hover {  color: #fff;}
+nav li {  margin: 0 5px; }
+nav li a {  color: #ccc; }
+nav li a:hover {  color: #fff; }
 
 .icon-f {
   font-family: 'Font Awesome 5 Free';
@@ -152,7 +152,7 @@ nav li a:hover {  color: #fff;}
 .icon-f:before { font-size: 14px; }
 .home:before { content: "\f015"; }
 .bell:before { content: "\f0f3"; }
-.location:before { content: "\f3c5";} 
+.location:before { content: "\f3c5"; } 
 
 .header-lower {
   padding: 10px 40px;
@@ -207,11 +207,11 @@ nav li a:hover {  color: #fff;}
   justify-content: center;
 }
 
-.header-lower form .form-element:nth-child(1){
+.header-lower form .form-element:nth-child(1) {
   flex-grow: 1;
   display: flex;
 }
-.header-lower form .form-element:nth-child(2){
+.header-lower form .form-element:nth-child(2) {
   flex-grow: 3;
   display: flex;
 }
@@ -275,7 +275,7 @@ nav li a:hover {  color: #fff;}
   transition: all 0.3s ease;
 }
 
-.hero-lower li a:hover {  border-bottom: 2px solid #000;}
+.hero-lower li a:hover { border-bottom: 2px solid #000;}
 
 .hero-lower li {
   padding: 20px;
@@ -346,7 +346,7 @@ section { margin: 50px 0; }
 
 .voucher .download figcaption a { color: inherit; }
 .voucher { margin-top: 30px;}
-.voucher-enquiry-content div:first-child img { width: auto;}
+.voucher-enquiry-content div:first-child img { width: auto; }
 
 .voucher-enquiry-content {
   margin-top: 30px;
@@ -354,7 +354,7 @@ section { margin: 50px 0; }
   justify-content: space-between;
 }
 
-.voucher-enquiry-content div:first-child { flex-basis: 40%;}
+.voucher-enquiry-content div:first-child { flex-basis: 40%; }
 
 .voucher-enquiry-content p {
   margin: 10px 0;
@@ -379,7 +379,7 @@ section { margin: 50px 0; }
   flex-basis: 45%;
 }
 
-.voucher-enquiry-content .form-element input[type='text']{
+.voucher-enquiry-content .form-element input[type='text'] {
   display: block;
   width: 100%;
   padding: 10px 0px;
@@ -517,7 +517,7 @@ section { margin: 50px 0; }
   text-align: center;
 }
 
-.faq-heading li:first-child {  border-left: 1px solid #000; }
+.faq-heading li:first-child { border-left: 1px solid #000; }
 
 .faq-heading li {
   padding: 15px 35px;
@@ -669,7 +669,6 @@ footer {
 /* ICONS */
 
 .social-media a { font-size: 0; }
-
 .icon-b { font-family: 'Font Awesome 5 Brands'; }
 .icon-b:before { font-size: 1rem; }
 .facebook::before { content: "\f39e"; }
