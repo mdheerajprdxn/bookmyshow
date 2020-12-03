@@ -10,10 +10,10 @@
   <title>Book My Show</title>
 
   <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
-  <meta name="description" lang="en" content="Book My Show is a service that lets you book tickets for Movies">
+  <meta name="description" lang="en" content="">
 
   <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
-  <meta name="keywords" lang="en" content="Movies Plays">
+  <meta name="keywords" lang="en" content="">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -21,6 +21,7 @@
   <link rel="shortcut icon" href="favicon.ico" />
 
   <!--font-awesome link for icons-->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" media="screen" href="assets/vendor/fontawesome%205/css/all.css">
 
   <!-- Owl Stylesheets -->
@@ -53,7 +54,7 @@
           <li> <a href="#FIXME" title="corporates"> corporates</a> </li>
           <li> <a href="#FIXME" title="support"> support</a> </li>
           <li> <a href="#FIXME" title="Notifications"><span class="icon-f bell"></span><sup>5</sup> </a></li>
-          <li><a href="#FIXME" title="Experiences"></a> sign in</a></li>
+          <li> <a href="#FIXME" title="Experiences">sign in</a> </li>
           <li> <a href="EFIXME" title="Location"> <span class="icon-f location"></span> mumbai</a></li>
         </ul>
       </nav>
@@ -68,7 +69,7 @@
           <h1><a href="./index.html" title="Home"> <img src="assets/images/logo.png" alt="Home"> </a></h1>
           <form action="#">
             <div class="form-element">
-              <select name="category" id="">
+              <select name="category" id="select-category">
                 <option value="">All</option>
                 <option value="">Movies</option>
                 <option value="">Plays</option>
@@ -80,13 +81,13 @@
           </form>
           <div class="language">
             <img src="assets/images/arijit-singh.png" alt="Arijit Singh Live">
-            <select name="language" id="">
+            <select name="language" id="select-language">
               <option value="">English</option>
               <option value="">Hindi</option>
             </select>
           </div>
         </div>
-        <img src="assets/images/mirror.jpg" alt="Mirror">
+        <img src="assets/images/mirror.jpg" alt="">
         <ul class="hero-lower">
           <li> <a href="#FIXME" title="Use Cases">use-cases</a></li>
           <li><a href="#FIXME" title="Use Cases">campaigns</a></li>
@@ -102,14 +103,14 @@
           <h2 class="section-heading">bookmyshow voucher enquiry</h2>
           <div class="voucher-enquiry-content">
             <div>
-              <img src="assets/images/corporate-vouchers.png" alt="Voucher">
+              <img src="assets/images/corporate-vouchers.png" alt="">
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse doloribus unde, ipsa pariatur corrupti
                 temporibus. Labore officia ex hic reprehenderit asperiores iusto rem rerum? Accusamus tempore ad quo
                 quam maiores.
               </p>
               <span>
-                <img src="assets/images/cv-reel.png" alt="Reel">
+                <img src="assets/images/cv-reel.png" alt="">
                 download brochure
               </span>
             </div>
@@ -119,8 +120,8 @@
               <input type="text" placeholder="*COMPANY NAME">
               <input type="text" placeholder="*OFFICIAL EMAIL ID">
               <span class="captcha">
-                <input type="checkbox" name="" id="">
-                <label for="">Im not a robot</label>
+                <input type="checkbox" name="captcha" id="captcha">
+                <label for="captcha">Im not a robot</label>
                 <span class="captcha-img">
                   <img src="assets/images/captcha.gif" alt="Captcha">
                 </span>
@@ -138,17 +139,14 @@
         <div class="wrapper">
           <h2 class="section-heading">campaigns</h2>
           <div class="owl-carousel owl-theme">
-            <div class="item"><img src="assets/images/campaigns/activation.png" alt="Activation"></div>
-            <div class="item"><img src="assets/images/campaigns/adidas-movie-promo-brand-promotions.png"
-                alt="Promotion"></div>
-            <div class="item"><img src="assets/images/campaigns/exclusives.png" alt="Exclusives"></div>
-            <div class="item"><img src="assets/images/campaigns/generation.png" alt="Generation"></div>
-            <div class="item"><img src="assets/images/campaigns/hpcl-power-couple-lead-generation.png"
-                alt="Power Couple"></div>
-            <div class="item"><img src="assets/images/campaigns/lenovo-blockbuster-promo-lead-generation.png"
-                alt="Blockbuster">
+            <div class="item"><img src="assets/images/campaigns/activation.png" alt=""></div>
+            <div class="item"><img src="assets/images/campaigns/adidas-movie-promo-brand-promotions.png" alt=""></div>
+            <div class="item"><img src="assets/images/campaigns/exclusives.png" alt=""></div>
+            <div class="item"><img src="assets/images/campaigns/generation.png" alt=""></div>
+            <div class="item"><img src="assets/images/campaigns/hpcl-power-couple-lead-generation.png" alt=""></div>
+            <div class="item"><img src="assets/images/campaigns/lenovo-blockbuster-promo-lead-generation.png" alt="">
             </div>
-            <div class="item"><img src="assets/images/campaigns/vijay-sales-brand-promotions.png" alt="Promo"></div>
+            <div class="item"><img src="assets/images/campaigns/vijay-sales-brand-promotions.png" alt=""></div>
           </div>
         </div>
       </section>
@@ -240,6 +238,7 @@
             </li>
             <li>
               <ul>
+
                 <li>what is a winpins</li>
                 <li>what can i use a winpins for?</li>
                 <li>is there a limit on the number of vouchers that must be booked?</li>
@@ -255,6 +254,7 @@
                 <li>what is the validity period of a movie packs</li>
                 <li>can movie packs be redeemed against loyalty or reward points?</li>
               </ul>
+
             </li>
             <li>
               <ul>
@@ -354,13 +354,13 @@
         <a><img src="assets/images/logo.png" alt="Home"></a>
       </h2>
       <ul class="social-media">
-        <li> <a href="#FIXME" class="icon-b facebook" target="_blank">facebook</a> </li>
-        <li> <a href="#FIXME" class="icon-b twitter" target="_blank">Twitter</a></li>
-        <li> <a href="#FIXME" class="icon-b instagram" target="_blank">Instagram</a></li>
-        <li> <a href="#FIXME" class="icon-b youtube" target="_blank">Youtube</a></li>
-        <li> <a href="#FIXME" class="icon-b pintrest" target="_blank">Pintrest</a></li>
-        <li> <a href="#FIXME" class="icon-b google-plus" target="_blank">GooglePlus</a></li>
-        <li> <a href="#FIXME" class="icon-b linkedin" target="_blank">LinkedIn</a></li>
+        <li class=""> <a href="#FIXME" class="icon-b facebook" target="_blank">facebook</a> </li>
+        <li class=""> <a href="#FIXME" class="icon-b twitter" target="_blank">Twitter</a></li>
+        <li class=""> <a href="#FIXME" class="icon-b instagram" target="_blank">Instagram</a></li>
+        <li class=""> <a href="#FIXME" class="icon-b youtube" target="_blank">Youtube</a></li>
+        <li class=""> <a href="#FIXME" class="icon-b pintrest" target="_blank">Pintrest</a></li>
+        <li class=""> <a href="#FIXME" class="icon-b google-plus" target="_blank">GooglePlus</a></li>
+        <li class=""> <a href="#FIXME" class="icon-b linkedin" target="_blank">LinkedIn</a></li>
       </ul>
       <span class="copyright">
         <span>Copyright 2018 &copy; bigtree entertainment Pvt.Ltd. all rights reserved</span>
@@ -373,10 +373,11 @@
   </div>
   <!--container end-->
 
-  <!-- vendors -->
+  <!-- javascript -->
   <script src="./assets/vendor/jquery-1.8.3.min.js"></script>
   <script src="./assets/owlcarousel/assets/owlcarousel/owl.carousel.js"></script>
-  <!-- javascript -->
+  <!-- vendors -->
+  <!-- <script src="./assets/vendors/highlight.js"></script> -->
   <script src="./assets/js/script.js"></script>
 </body>
 
