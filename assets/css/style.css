@@ -107,26 +107,26 @@ li {
   Header styling starts here
 =================================*/
 nav {
-  background-color: #262936;
-  color: #ccc;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: space-between;
   padding: 10px;
   padding-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #262936;
+  color: #ccc;
   font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
 .first-nav{
+  color: #fff;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #fff;
 }
 
 .first-nav sup {
+  padding: 2px;
   background-color: red;
   color: #fff;
-  padding: 2px;
   text-transform: uppercase;
 }
 
@@ -138,36 +138,19 @@ nav {
   color: #fff;
   text-transform: uppercase;
 }
-nav li {
-  margin: 0 5px;
-}
 
-nav li a {
-  color: #ccc;
-}
+nav li {  margin: 0 5px;}
+nav li a {  color: #ccc;}
+nav li a:hover {  color: #fff;}
 
-nav li a:hover {
-  color: #fff;
-}
 .icon-f {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
 
-.home:before {
-  content: "\f015";
-}
-
-.bell:before {
-  content: "\f0f3";
-}
-
-.location:before {
-  content: "\f3c5";
-}
-
-
-
+.home:before {  content: "\f015";}
+.bell:before {  content: "\f0f3";}
+.location:before {  content: "\f3c5";}
 
 /*=================================
   Header styling ends here
@@ -177,26 +160,24 @@ nav li a:hover {
   main styling starts here
 =================================*/
 .hero-section {
-  position: relative;
+  margin: 0;
   display: flex;
+  position: relative;
   flex-flow: column;
   justify-content: space-between;
-  margin: 0;
 }
 
 .hero-upper  {
   padding: 10px 40px;
   display: flex;
+  justify-content: space-between;
+  position: absolute;
   left: 0;
   right: 0;
-  position: absolute;
-  justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.hero-upper h1 {
-  flex-basis: 300px;
-}
+.hero-upper h1 {  flex-basis: 300px;}
 
 .hero-upper h1 a{
   max-height: 100%;
@@ -209,30 +190,30 @@ nav li a:hover {
 }
 
 .hero-upper  form {
-  flex-basis: 60%;
   display: flex;
   align-items: stretch;
+  flex-basis: 60%;
 }
 
 .hero-upper  form .form-element>*{
+  height: 100%;
+  max-height: 55px;
   padding: 0 30px;
   border: 0;
   margin: 0;
-  height: 100%;
-  max-height: 55px;
-  /* padding: 20px 50px; */
 }
 
 .hero-upper  form .form-element select {
+  flex-grow: 1;
+  justify-content: center;
   background-color: #b31b40;
   color: #fff;
-  flex-grow: 1;
-  text-align: center;
-  text-align-last:center;
-  text-transform: uppercase;
-  justify-content: center;
   font-size: 1.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-align-last:center;
 }
+
 .hero-upper  form .form-element :nth-child(1)::before {
   content: 'hi';
   height: 20px;
@@ -256,9 +237,7 @@ nav li a:hover {
 .hero-upper  form .form-element input {
   color: #000;
   flex-grow: 1;
-  /* width: 100%; */
 }
-
 
 .hero-upper  form .form-element input::placeholder {
   color: #000;
@@ -273,41 +252,39 @@ nav li a:hover {
   height: auto;
   width: auto;
 }
+
 .hero-upper .language select{
-  display: inline;
   padding: 5px 40px 5px 5px;
   border-radius: 5px;
+  display: inline;
   color: #555;
   font-size: 0.8rem;
 }
 
 .hero-lower {
-  position: relative;
   width: 80%;
   margin: auto;
-  transform:  translateY(-50%);
-  text-transform: uppercase;
+  position: relative;
   display: flex;
+  text-transform: uppercase;
+  transform:  translateY(-50%);
 }
 
 .hero-lower li a {
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
   color: #000;
   font-weight: 600;
   font-size: 0.9rem;
-  /* width: 100%; */
-  padding-bottom: 3px;
-  border-bottom: 2px solid transparent;
   transition: all 0.3s ease;
 }
 
-.hero-lower li a:hover {
-  border-bottom: 2px solid black;
-}
+.hero-lower li a:hover {  border-bottom: 2px solid black;}
 
 .hero-lower li {
-  background-color: #fff;
   padding: 20px;
   flex-grow: 1;
+  background-color: #fff;
   box-shadow: 6px 5px 10px 0px #aaa;
   text-align: center;
 }
@@ -332,105 +309,91 @@ nav li a:hover {
 
 /* voucher enquiry */
 
-section {
-  margin: 50px 0;
-}
+section {  margin: 50px 0;}
 
 .section-heading {
+  letter-spacing: 2px;
   font-weight: 500;
   font-size: 1.1rem;
-  letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
 }
 .section-heading:after {
   content: "";
-  display: block;
-  padding: 1px;
   height: 1px;
   width: 30px;
+  padding: 1px;
   margin: auto;
+  display: block;
   border-bottom: 1px solid red;
 }
-.voucher {
-  margin-top: 30px;
-}
-.voucher-enquiry-content div:first-child img {
-  width: auto;
-}
+.voucher {  margin-top: 30px;}
+.voucher-enquiry-content div:first-child img {  width: auto;}
+
 .voucher-enquiry-content {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
 }
 
-.voucher-enquiry-content div:first-child {
-  flex-basis: 40%;
-}
+.voucher-enquiry-content div:first-child {  flex-basis: 40%;}
 
 .voucher-enquiry-content p {
   margin: 10px 0;
+  color: #555;
   font-weight: 600;
   font-size: 0.9rem;
-  color: #555;
-  
-  text-align:justify;
   word-break:keep-all;
+  text-align:justify;
 }
 
 .voucher-enquiry-content form {
   padding: 20px;
   display: flex;
-  flex-basis: 50%;
-  flex-wrap: wrap;
   align-items: center;
+  flex-basis: 50%;
   box-shadow: 0 0 5px 5px #ccc;
+  flex-wrap: wrap;
 }
 
 .voucher-enquiry-content form> * {
-  flex-basis: 45%;
   margin : 10px
+  flex-basis: 45%;
 }
 
 .captcha {
-  /* max-height: 50px; */
+  padding: 5px;
   display: flex;
   background-color: #eee;
-  padding: 5px;
   align-items: center;
 }
 
-.captcha label {
-  flex-grow: 1;
-}
+.captcha label {  flex-grow: 1;}
+
 .voucher-enquiry-content form input {
   padding: 10px 10px;
   box-sizing: border-box;
 }
 
 .voucher-enquiry-content form button {
-  background-color: #b31b40;
-  color: white;
+  padding: 10px 0 ;
   border: none;
   outline: none;
-  text-transform: uppercase;
-  padding: 10px 0 ;
+  color: white;
+  background-color: #b31b40;
   border-radius: 3px;
+  text-transform: uppercase;
 }
 .voucher-enquiry-content form .captcha-img {
-  display: block;
   max-width: 80px;
+  display: block;
 }
-.voucher-enquiry-content .captcha-img img {
-  /* max-height: 100%;
-  width: auto; */
-}
+
 
 /* Campaigns */
 
 .campaigns .item {
   margin: 10% 25% 25% 25%;
-  /* width: auto; */
 }
 
 .campaigns .owl-carousel .owl-nav .owl-prev{
@@ -441,78 +404,61 @@ section {
 }
 
 .campaigns .owl-carousel .owl-nav .owl-next{
-  font-size: 2rem;
   position: absolute;
   top: 40%;
   right: 0;
+  font-size: 2rem;
 }
 
-.campaigns .owl-carousel .owl-dots {
- display: none;
-}
+.campaigns .owl-carousel .owl-dots { display: none;}
 
 /* PRODUCTS */
 
 .products-content{
+  margin-top: 30px;
   display: flex;
   align-items: stretch;
-  margin-top: 30px;
 }
 
 .product-titles {
-  flex-basis: 40%;
   display: flex;
+  flex-basis: 40%;
   flex-flow: column;
   justify-content: center;
   text-transform: uppercase;
   font-weight: 600;
   color: #555;
-  /* align-items: center; */
 }
 
 .product-titles li {
-  flex-grow: 1;
-  border: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 31px 10px;
+  border: 1px solid #ccc;
   box-sizing: border-box;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
 }
 
-.product-list {
-  display: flex;
-}
+.product-list {  display: flex;}
 
 .product-list li {
-  display: none;
-  justify-content: space-around;
-  align-items: center;
   border: 1px solid #ccc;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .product-list li p {
   flex-basis: 60%;
-  text-align: center;
   color: #555;
+  text-align: center;
 }
 
-.product-list li .img-container {
-  flex-basis: 20%;
-}
-.product-list li img {
-  /* margin: 20px 0; */
-  /* width: 100%; */
-}
-
-.product-list li:first-child {
-  display: flex;
-}
+.product-list li .img-container {  flex-basis: 20%;}
+.product-list li:first-child {  display: flex;}
 
 /* Testimonials */
-.testimonials img {
-  width: auto;
-}
 
 .testimonials .item {
   margin: 10% 25% 25% 25%;
