@@ -125,7 +125,7 @@ nav {
 
 .first-nav sup {
   padding: 2px;
-  background-color: red;
+  background-color: #f00;
   color: #fff;
   text-transform: uppercase;
 }
@@ -134,7 +134,7 @@ nav {
   padding: 2px;
   border-radius: 50%;
   font-size: 0.6rem;
-  background-color: red;
+  background-color: #f00;
   color: #fff;
   text-transform: uppercase;
 }
@@ -149,10 +149,10 @@ nav li a:hover {  color: #fff;}
   font-size: 0;
 }
 
-.icon-f:before { font-size: 14px;}
-.home:before { content: "\f015";}
-.bell:before { content: "\f0f3";}
-.location:before { content: "\f3c5";}
+.icon-f:before { font-size: 14px; }
+.home:before { content: "\f015"; }
+.bell:before { content: "\f0f3"; }
+.location:before { content: "\f3c5";} 
 
 .header-lower {
   padding: 10px 40px;
@@ -165,7 +165,7 @@ nav li a:hover {  color: #fff;}
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.header-lower h1 { flex-basis: 300px;}
+.header-lower h1 { flex-basis: 300px; }
 
 .header-lower h1 a {
   max-height: 100%;
@@ -202,12 +202,6 @@ nav li a:hover {  color: #fff;}
   text-align-last:center;
 }
 
-.header-lower form .form-element :nth-child(1)::before {
-  content: 'hi';
-  height: 20px;
-  width: 20px;
-  font-size: 5rem;
-}
 .header-lower form .form-element option {
   text-align: center;
   justify-content: center;
@@ -232,9 +226,7 @@ nav li a:hover {  color: #fff;}
   font-weight: 800;
 }
 
-.header-lower .language {
-  margin: 0 20px;
-}
+.header-lower .language { margin: 0 20px; }
 
 .header-lower .language img {
   height: auto;
@@ -283,7 +275,7 @@ nav li a:hover {  color: #fff;}
   transition: all 0.3s ease;
 }
 
-.hero-lower li a:hover {  border-bottom: 2px solid black;}
+.hero-lower li a:hover {  border-bottom: 2px solid #000;}
 
 .hero-lower li {
   padding: 20px;
@@ -313,7 +305,7 @@ nav li a:hover {  color: #fff;}
 
 /* voucher enquiry */
 
-section {  margin: 50px 0;}
+section { margin: 50px 0; }
 
 .section-heading {
   letter-spacing: 2px;
@@ -322,6 +314,7 @@ section {  margin: 50px 0;}
   text-transform: uppercase;
   text-align: center;
 }
+
 .section-heading:after {
   content: "";
   height: 1px;
@@ -329,10 +322,31 @@ section {  margin: 50px 0;}
   padding: 1px;
   margin: auto;
   display: block;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #f00;
 }
-.voucher {  margin-top: 30px;}
-.voucher-enquiry-content div:first-child img {  width: auto;}
+
+.voucher .download {
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #37363B;
+  display: inline-block;
+  width: auto;
+  border: 1px solid #777;
+  border-top-left-radius: 25%;
+  border-bottom-left-radius: 25%;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+}
+
+.voucher .download figcaption {
+  display: inline-block;
+  position: relative;
+}
+
+.voucher .download figcaption a { color: inherit; }
+.voucher { margin-top: 30px;}
+.voucher-enquiry-content div:first-child img { width: auto;}
 
 .voucher-enquiry-content {
   margin-top: 30px;
@@ -340,7 +354,7 @@ section {  margin: 50px 0;}
   justify-content: space-between;
 }
 
-.voucher-enquiry-content div:first-child {  flex-basis: 40%;}
+.voucher-enquiry-content div:first-child { flex-basis: 40%;}
 
 .voucher-enquiry-content p {
   margin: 10px 0;
@@ -360,9 +374,15 @@ section {  margin: 50px 0;}
   flex-wrap: wrap;
 }
 
-.voucher-enquiry-content form> * {
+.voucher-enquiry-content form .form-element {
   margin : 10px;
   flex-basis: 45%;
+}
+
+.voucher-enquiry-content .form-element input[type='text']{
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
 }
 
 .captcha {
@@ -372,33 +392,28 @@ section {  margin: 50px 0;}
   align-items: center;
 }
 
-.captcha label {  flex-grow: 1;}
-
-.voucher-enquiry-content form input {
-  padding: 10px 10px;
-  box-sizing: border-box;
-}
-
-.voucher-enquiry-content form button {
-  padding: 10px 0 ;
-  border: none;
-  outline: none;
-  color: white;
-  background-color: #b31b40;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
 .voucher-enquiry-content form .captcha-img {
   max-width: 80px;
   display: block;
 }
 
+.captcha label { flex-grow: 1; }
+
+.voucher-enquiry-content form button {
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #b31b40;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.voucher-enquiry-content form button:hover { background-color: #d32e57;}
 
 /* Campaigns */
 
-.campaigns .item {
-  margin: 10% 25% 25% 25%;
-}
+.campaigns .item { margin: 10% 25% 25% 25%; }
 
 .campaigns .owl-carousel .owl-nav .owl-prev{
   font-size: 2rem;
@@ -444,7 +459,7 @@ section {  margin: 50px 0;}
   justify-content: center;
 }
 
-.product-list {  display: flex;}
+.product-list { display: flex; }
 
 .product-list li {
   border: 1px solid #ccc;
@@ -459,17 +474,13 @@ section {  margin: 50px 0;}
   text-align: center;
 }
 
-.product-list li .img-container {  flex-basis: 20%;}
-.product-list li:first-child {  display: flex;}
+.product-list li .img-container { flex-basis: 20%; }
+.product-list li:first-child { display: flex; }
 
 /* Testimonials */
 
-.testimonials .item {
-  margin: 10% 25% 25% 25%;
-}
-.testimonials .owl-carousel .owl-nav {
-  display: block;
-}
+.testimonials .item { margin: 10% 25% 25% 25%; }
+.testimonials .owl-carousel .owl-nav { display: block; }
 
 .testimonials .owl-carousel .owl-nav .owl-prev{
   display: block;
@@ -486,7 +497,7 @@ section {  margin: 50px 0;}
   font-size: 2rem;
 }
 
-.testimonials .owl-carousel .owl-dots { display: none;}
+.testimonials .owl-carousel .owl-dots { display: none; }
 
 .testimonials p {
   width: 70%;
@@ -506,7 +517,7 @@ section {  margin: 50px 0;}
   text-align: center;
 }
 
-.faq-heading li:first-child {  border-left: 1px solid #000;}
+.faq-heading li:first-child {  border-left: 1px solid #000; }
 
 .faq-heading li {
   padding: 15px 35px;
@@ -529,7 +540,7 @@ section {  margin: 50px 0;}
   flex-flow: column;
 }
 
-.faq-content>li { display: none;}
+.faq-content>li { display: none; }
 
 .faq-content>li ul {
   display: flex;
@@ -571,8 +582,8 @@ footer {
   font-size: 0.9rem;
 }
 
-.footer-column {  flex-basis: 22%;}
-.footer-item {  margin-top: 20px;}
+.footer-column { flex-basis: 22%; }
+.footer-item { margin-top: 20px; }
 
 .footer-item .heading {
   margin: 5px 0;
@@ -585,8 +596,8 @@ footer {
   flex-flow: column;
 }
 
-.footer-item.movies ul li a{  padding-left: 0;}
-.footer-content ul li {  margin: 5px 0;}
+.footer-item.movies ul li a{ padding-left: 0; }
+.footer-content ul li { margin: 5px 0; }
 
 .footer-content ul li a{
   padding: 0 5px;
@@ -596,9 +607,9 @@ footer {
   text-transform: capitalize;
 }
 
-.footer-content ul li:last-child a {  border: none;}
-.footer-content ul li a:hover {  color: #fff;}
-.footer-heading {  text-align: center;}
+.footer-content ul li:last-child a { border: none; }
+.footer-content ul li a:hover { color: #fff; }
+.footer-heading { text-align: center; }
 
 .footer-heading a {
   width: 100%;
@@ -631,9 +642,7 @@ footer {
   background-color: #37363B;
 }
 
-.social-media {
-  text-align: center;
-}
+.social-media { text-align: center; }
 
 .social-media .icon-b {
   height: 15px;
@@ -645,7 +654,7 @@ footer {
   color: #37363B;
 }
 
-.social-media a.icon-b:hover {  background-color: #ccc;}
+.social-media a.icon-b:hover { background-color: #ccc; }
 
 .copyright {
   display: flex;
@@ -656,17 +665,17 @@ footer {
 
 /* ICONS */
 
-.social-media a {  font-size: 0;}
+.social-media a { font-size: 0; }
 
-.icon-b {  font-family: 'Font Awesome 5 Brands';}
-.icon-b:before {  font-size: 1rem;}
-.facebook::before {  content: "\f39e"; }
-.twitter:before {  content: "\f099";}
-.instagram:before {  content: "\f16d";}
-.youtube:before {  content: "\f167";}
-.pintrest:before {  content: "\f0d2";}
-.google-plus:before {  content: "\f0d5";}
-.linkedin:before {  content: "\f0e1";}
+.icon-b { font-family: 'Font Awesome 5 Brands'; }
+.icon-b:before { font-size: 1rem; }
+.facebook::before { content: "\f39e"; }
+.twitter:before { content: "\f099"; }
+.instagram:before { content: "\f16d"; }
+.youtube:before { content: "\f167"; }
+.pintrest:before { content: "\f0d2"; }
+.google-plus:before { content: "\f0d5"; }
+.linkedin:before { content: "\f0e1"; }
 
  /*=================================
   footer styling ends here
@@ -675,7 +684,5 @@ footer {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-
-
 
 }  
