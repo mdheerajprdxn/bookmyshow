@@ -516,13 +516,10 @@ section {
   text-align: center;
   margin-top: 60px;
   margin-bottom: 40px;
-  /* width: auto; */
-  /* margin: auto; */
 }
 
 .faq-heading li:first-child {
   border-left: 1px solid #000;
-
 }
 .faq-heading li {
   border-top: 1px solid #000;
@@ -535,18 +532,30 @@ section {
   color: #777;
 }
 
+.faq-heading li:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
 .faq-content {
   display: flex;
   flex-flow: column;
 }
 
-.faq-content li {
+.faq-content>li { display: none;}
+
+.faq-content>li ul {
+  display: flex;
+  flex-flow: column;
+}
+
+.faq-content>li ul li {
   text-transform: uppercase;
   margin: 10px 0;
   font-size: 0.9rem;
 }
 
-.faq-content li::before {
+.faq-content li ul li::before {
   font-family: 'Font Awesome 5 Free';
   content: "\f138";
   font-weight: 900;
