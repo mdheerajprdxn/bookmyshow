@@ -32,4 +32,34 @@ $(document).ready(function () {
       },
     },
   });
+
+  // FAQ
+  let active = 0;
+  var faqHeadings = $(".faq-heading li");
+  var faqs = $(".faq-content>li");
+  showFaq();
+  faqHeadings.each((index, item) => {
+    item.addEventListener("click", handleFaq);
+  });
+  function handleFaq(e) {
+    let clickedHeading = e.target;
+    let foundIndex = null;
+    faqHeadings.each((index, item) => {
+      if (item == clickedHeading) {
+        foundIndex = index;
+      }
+    });
+    active = foundIndex;
+    showFaq();
+  }
+  function showFaq() {
+    faqs.each((index, item) => {
+      item.style.display = "none";
+    });
+    faqs.each((index, item) => {
+      if (index == active) {
+        item.style.display = "block";
+      }
+    });
+  }
 });
