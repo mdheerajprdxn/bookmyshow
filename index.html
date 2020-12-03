@@ -21,7 +21,6 @@
   <link rel="shortcut icon" href="favicon.ico" />
 
   <!--font-awesome link for icons-->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" media="screen" href="assets/vendor/fontawesome%205/css/all.css">
 
   <!-- Owl Stylesheets -->
@@ -40,7 +39,7 @@
     <header>
       <nav>
         <ul class="first-nav">
-          <li><a href="#FIXME" title="Experiences"> <span class="icon-f home"></span> </a></li>
+          <li><a href="./index.html" title="Experiences"> <span class="icon-f home">Home</span> </a></li>
           <li> <a href="#FIXME" title="Experiences"> experiences</a> </li>
           <li> <a href="#FIXME" title="movies"> movies</a> </li>
           <li> <a href="#FIXME" title="events"> events</a> </li>
@@ -53,41 +52,41 @@
           <li> <a href="#FIXME" title="gift cards"> gift cards</a> </li>
           <li> <a href="#FIXME" title="corporates"> corporates</a> </li>
           <li> <a href="#FIXME" title="support"> support</a> </li>
-          <li> <a href="#FIXME" title="Notifications"><span class="icon-f bell"></span><sup>5</sup> </a></li>
+          <li> <a href="#FIXME" title="Notifications"><span class="icon-f bell">bell</span><sup>5</sup> </a></li>
           <li> <a href="#FIXME" title="Experiences">sign in</a> </li>
-          <li> <a href="EFIXME" title="Location"> <span class="icon-f location"></span> mumbai</a></li>
+          <li> <a href="EFIXME" title="Location"> <span class="icon-f location">location</span> mumbai</a></li>
         </ul>
       </nav>
-    </header>
-    <!--header section start-->
-    <!--main section start-->
-    <main>
-
-      <!-- Hero section start -->
-      <section class="hero-section">
-        <div class="hero-upper">
-          <h1><a href="./index.html" title="Home"> <img src="assets/images/logo.png" alt="Home"> </a></h1>
-          <form action="#">
-            <div class="form-element">
-              <select name="category" id="select-category">
-                <option value="">All</option>
-                <option value="">Movies</option>
-                <option value="">Plays</option>
-              </select>
-            </div>
-            <div class="form-element">
-              <input type="text" placeholder="Book Ticket For Movies, Events, Plays And Sports">
-            </div>
-          </form>
-          <div class="language">
-            <img src="assets/images/arijit-singh.png" alt="Arijit Singh Live">
-            <select name="language" id="select-language">
-              <option value="">English</option>
-              <option value="">Hindi</option>
+      <div class="header-lower">
+        <h1><a href="./index.html" title="Home"> <img src="assets/images/logo.png" alt="Home"> </a></h1>
+        <form action="#">
+          <div class="form-element">
+            <select name="category" id="select-category">
+              <option value="all">All</option>
+              <option value="movies">Movies</option>
+              <option value="plays">Plays</option>
             </select>
           </div>
+          <div class="form-element">
+            <input type="text" placeholder="Book Ticket For Movies, Events, Plays And Sports">
+          </div>
+        </form>
+        <div class="language">
+          <img src="assets/images/arijit-singh.png" alt="Arijit Singh Live">
+          <select name="language" id="select-language">
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+          </select>
         </div>
-        <img src="assets/images/mirror.jpg" alt="">
+      </div>
+    </header>
+    <!--header section start-->
+
+    <!--main section start-->
+    <main>
+      <!-- Hero section start -->
+      <section class="hero-section">
+        <img src="assets/images/mirror.jpg" alt="Mirror">
         <ul class="hero-lower">
           <li> <a href="#FIXME" title="Use Cases">use-cases</a></li>
           <li><a href="#FIXME" title="Use Cases">campaigns</a></li>
@@ -103,34 +102,33 @@
           <h2 class="section-heading">bookmyshow voucher enquiry</h2>
           <div class="voucher-enquiry-content">
             <div>
-              <img src="assets/images/corporate-vouchers.png" alt="">
+              <img src="assets/images/corporate-vouchers.png" alt="Voucher">
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse doloribus unde, ipsa pariatur corrupti
                 temporibus. Labore officia ex hic reprehenderit asperiores iusto rem rerum? Accusamus tempore ad quo
                 quam maiores.
               </p>
-              <span>
-                <img src="assets/images/cv-reel.png" alt="">
-                download brochure
-              </span>
+              <figure class="download">
+                <img src="assets/images/cv-reel.png" alt="Reel">
+                <figcaption> <a href="#FIXME" title="Download">download <br> brochure</a></figcaption>
+              </figure>
             </div>
             <form action="#">
-              <input type="text" placeholder="*FULL NAME">
-              <input type="text" placeholder="*MOBILE NUMBER">
-              <input type="text" placeholder="*COMPANY NAME">
-              <input type="text" placeholder="*OFFICIAL EMAIL ID">
-              <span class="captcha">
+              <div class="form-element"> <input type="text" placeholder="*FULL NAME"></div>
+              <div class="form-element"> <input type="text" placeholder="*MOBILE NUMBER"></div>
+              <div class="form-element"> <input type="text" placeholder="*COMPANY NAME"></div>
+              <div class="form-element"> <input type="text" placeholder="*OFFICIAL EMAIL ID"></div>
+              <div class="form-element captcha">
                 <input type="checkbox" name="captcha" id="captcha">
                 <label for="captcha">Im not a robot</label>
-                <span class="captcha-img">
+                <figure class="captcha-img">
                   <img src="assets/images/captcha.gif" alt="Captcha">
-                </span>
-              </span>
-              <button type="submit" value="submit">submit</button>
+                </figure>
+              </div>
+              <button class="form-element" type="submit" value="submit">submit</button>
             </form>
           </div>
         </div>
-
       </section>
       <!-- Voucher inquiry end -->
 
@@ -138,16 +136,19 @@
       <section class="campaigns">
         <div class="wrapper">
           <h2 class="section-heading">campaigns</h2>
-          <div class="owl-carousel owl-theme">
-            <div class="item"><img src="assets/images/campaigns/activation.png" alt=""></div>
-            <div class="item"><img src="assets/images/campaigns/adidas-movie-promo-brand-promotions.png" alt=""></div>
-            <div class="item"><img src="assets/images/campaigns/exclusives.png" alt=""></div>
-            <div class="item"><img src="assets/images/campaigns/generation.png" alt=""></div>
-            <div class="item"><img src="assets/images/campaigns/hpcl-power-couple-lead-generation.png" alt=""></div>
-            <div class="item"><img src="assets/images/campaigns/lenovo-blockbuster-promo-lead-generation.png" alt="">
-            </div>
-            <div class="item"><img src="assets/images/campaigns/vijay-sales-brand-promotions.png" alt=""></div>
-          </div>
+          <ul class="owl-carousel owl-theme">
+            <li class="item"><img src="assets/images/campaigns/activation.png" alt="Activation"></li>
+            <li class="item"><img src="assets/images/campaigns/adidas-movie-promo-brand-promotions.png" alt="Promo">
+            </li>
+            <li class="item"><img src="assets/images/campaigns/exclusives.png" alt="Exclusives"></li>
+            <li class="item"><img src="assets/images/campaigns/generation.png" alt="Generation"></li>
+            <li class="item"><img src="assets/images/campaigns/hpcl-power-couple-lead-generation.png" alt="Generation">
+            </li>
+            <li class="item"><img src="assets/images/campaigns/lenovo-blockbuster-promo-lead-generation.png"
+                alt="Generation">
+            </li>
+            <li class="item"><img src="assets/images/campaigns/vijay-sales-brand-promotions.png" alt="Promo"></li>
+          </ul>
         </div>
       </section>
       <!-- Campaigns end -->
@@ -200,11 +201,11 @@
       <section class="testimonials">
         <div class="wrapper">
           <h3 class="section-heading">testimonials</h3>
-          <div class="owl-carousel owl-theme">
-            <div class="item"><img src="assets/images/testimonials/cm-logo.png" alt="Testimonial"></div>
-            <div class="item"><img src="assets/images/testimonials/hp.png" alt="Testimonial"></div>
-            <div class="item"><img src="assets/images/testimonials/mc-logo.png" alt="Testimonial"></div>
-          </div>
+          <ul class="owl-carousel owl-theme">
+            <li class="item"><img src="assets/images/testimonials/cm-logo.png" alt="Testimonial"></li>
+            <li class="item"><img src="assets/images/testimonials/hp.png" alt="Testimonial"></li>
+            <li class="item"><img src="assets/images/testimonials/mc-logo.png" alt="Testimonial"></li>
+          </ul>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto excepturi porro rem debitis delectus
             exercitationem deleniti nesciunt ipsum, quam quae tempora quod, aliquam modi accusamus atque necessitatibus
@@ -229,58 +230,56 @@
           <ul class="faq-content">
             <li>
               <ul>
-                <li>what is a gift voucher</li>
-                <li>what can i use a gift-voucher for?</li>
-                <li>is there a limit on the number of vouchers that must be booked?</li>
-                <li>what is the validity period of a gift-voucher</li>
-                <li>can gift voucher be redeemed against loyalty or reward points?</li>
+                <li> <a href="#FIXME" title="FAQ"></a> what is a gift voucher </li>
+                <li> <a href="#FIXME" title="FAQ">what can i use a gift-voucher for?</a> </li>
+                <li><a href="#FIXME" title="FAQ">is there a limit on the number of vouchers that must be booked?
+                  </a></li>
+                <li><a href="#FIXME" title="FAQ">what is the validity period of a gift-voucher</a></li>
+                <li><a href="#FIXME" title="FAQ">can gift voucher be redeemed against loyalty or reward points?</li>
               </ul>
             </li>
             <li>
               <ul>
-
-                <li>what is a winpins</li>
-                <li>what can i use a winpins for?</li>
-                <li>is there a limit on the number of vouchers that must be booked?</li>
-                <li>what is the validity period of a winpins</li>
-                <li>can winpins be redeemed against loyalty or reward points?</li>
+                <li><a href="#FIXME" title="FAQ">what is a winpins</a></li>
+                <li><a href="#FIXME" title="FAQ">what can i use a winpins for?</a></li>
+                <li><a href="#FIXME" title="FAQ">is there a limit on the number of vouchers that must be booked?
+                  </a></li>
+                <li><a href="#FIXME" title="FAQ">what is the validity period of a winpins</a></li>
+                <li><a href="#FIXME" title="FAQ">can winpins be redeemed against loyalty or reward points?</a></li>
               </ul>
             </li>
             <li>
               <ul>
-                <li>what is a movie packs</li>
-                <li>what can i use a movie packs for?</li>
-                <li>is there a limit on the number of vouchers that must be booked?</li>
-                <li>what is the validity period of a movie packs</li>
-                <li>can movie packs be redeemed against loyalty or reward points?</li>
+                <li><a href="#FIXME" title="FAQ">what is a movie packs</a></li>
+                <li><a href="#FIXME" title="FAQ">what can i use a movie packs for?</a></li>
+                <li><a href="#FIXME" title="FAQ">is there a limit on the number of vouchers that must be booked? </a>
+                </li>
+                <li><a href="#FIXME" title="FAQ">what is the validity period of a movie packs</a></li>
+                <li><a href="#FIXME" title="FAQ">can movie packs be redeemed against loyalty or reward points?</a>
+                </li>
               </ul>
-
             </li>
             <li>
               <ul>
-                <li>what is a general queries</li>
-                <li>what can i use a general queries for?</li>
-                <li>is there a limit on the number of general queries that must be booked?</li>
+                <li><a href="#FIXME" title="FAQ">>what is a general queries</a></li>
+                <li><a href="#FIXME" title="FAQ">what can i use a general queries for?</a></li>
+                <li><a href="#FIXME" title="FAQ">is there a limit on the number of general queries that must be
+                    booked?</a></li>
               </ul>
-
             </li>
-
           </ul>
         </div>
       </section>
       <!-- FAQ end -->
-
     </main>
     <!--main section end-->
-
-
 
     <!--footer section start-->
     <footer>
       <div class="footer-content">
         <div class="footer-column">
           <div class="footer-item">
-            <span class="heading"> videos </span>
+            <h4 class="heading"> videos </h4>
             <ul>
               <li><a href="#FIXME" title="Trailers">Trailers</a> </li>
               <li><a href="#FIXME" title="MyBollywood">MyBollywood</a></li>
@@ -288,7 +287,7 @@
               <li><a href="#FIXME" title="MyStyle">MyStyle</a></li>
             </ul>
             <div class="footer-item">
-              <span class="heading"> events calender </span>
+              <h4 class="heading"> events calender </h4>
               <ul>
                 <li><a href="#FIXME" title="events near me today">events near me today</a></li>
                 <li><a href="#FIXME" title="events happening tomorrow">events happening tomorrow</a></li>
@@ -300,7 +299,7 @@
         </div>
         <div class="footer-column">
           <div class="footer-item">
-            <span class="heading">events tickets booking online </span>
+            <h4 class="heading">events tickets booking online </h4>
             <ul>
               <li><a href="#FIXME" title="upcoming events in mumbai">upcoming events in mumbai</a></li>
               <li><a href="#FIXME" title="upcoming events in delhi">upcoming events in delhi</a></li>
@@ -315,8 +314,8 @@
         </div>
         <div class="footer-column">
           <div class="footer-item movies">
-            <span class="heading">movies, cinemas & celebrities
-            </span>
+            <h4 class="heading">movies, cinemas & celebrities
+            </h4>
             <ul>
               <li><a href="#FIXME" title="Trailers">latest upcoming movies</a></li>
               <li><a href="#FIXME" title="best now showing movies">best now showing movies</a></li>
@@ -329,7 +328,7 @@
         </div>
         <div class="footer-column">
           <div class="footer-item">
-            <span class="heading">archived collection</span>
+            <h4 class="heading">archived collection</h4>
             <ul>
               <li><a href="#FIXME" title="old movies">old movies</a></li>
               <li><a href="#FIXME" title="past events">past events</a></li>
@@ -340,7 +339,7 @@
             </ul>
           </div>
           <div class="footer-item">
-            <span class="heading">countires</span>
+            <h4 class="heading">countires</h4>
             <ul>
               <li><a href="#FIXME" title="indonesia">indonesia</a></li>
               <li><a href="#FIXME" title="new zealand">new zealand</a></li>
@@ -350,26 +349,25 @@
           </div>
         </div>
       </div>
-      <h2 class="footer-heading">
-        <a><img src="assets/images/logo.png" alt="Home"></a>
-      </h2>
+      <h3 class="footer-heading">
+        <a href="./index" title="Home"><img src="assets/images/logo.png" alt="Home"></a>
+      </h3>
       <ul class="social-media">
-        <li class=""> <a href="#FIXME" class="icon-b facebook" target="_blank">facebook</a> </li>
-        <li class=""> <a href="#FIXME" class="icon-b twitter" target="_blank">Twitter</a></li>
-        <li class=""> <a href="#FIXME" class="icon-b instagram" target="_blank">Instagram</a></li>
-        <li class=""> <a href="#FIXME" class="icon-b youtube" target="_blank">Youtube</a></li>
-        <li class=""> <a href="#FIXME" class="icon-b pintrest" target="_blank">Pintrest</a></li>
-        <li class=""> <a href="#FIXME" class="icon-b google-plus" target="_blank">GooglePlus</a></li>
-        <li class=""> <a href="#FIXME" class="icon-b linkedin" target="_blank">LinkedIn</a></li>
+        <li> <a href="#FIXME" class="icon-b facebook" target="_blank" title="Facebook">facebook</a> </li>
+        <li> <a href="#FIXME" class="icon-b twitter" target="_blank" title="Twitter">Twitter</a></li>
+        <li> <a href="#FIXME" class="icon-b instagram" target="_blank" title="Instagram">Instagram</a></li>
+        <li> <a href="#FIXME" class="icon-b youtube" target="_blank" title="Youtube">Youtube</a></li>
+        <li> <a href="#FIXME" class="icon-b pintrest" target="_blank" title="Pintrest">Pintrest</a></li>
+        <li> <a href="#FIXME" class="icon-b google-plus" target="_blank" title="GooglePlus">GooglePlus</a></li>
+        <li> <a href="#FIXME" class="icon-b linkedin" target="_blank" title="LinkedIn">LinkedIn</a></li>
       </ul>
       <span class="copyright">
-        <span>Copyright 2018 &copy; bigtree entertainment Pvt.Ltd. all rights reserved</span>
-        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum dicta ab dolorum minus similique odio
-          dolorem animi cupiditate officiis id.</span>
+        <p>Copyright 2018 &copy; bigtree entertainment Pvt.Ltd. all rights reserved</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum dicta ab dolorum minus similique odio
+          dolorem animi cupiditate officiis id.</p>
       </span>
     </footer>
     <!--footer section end-->
-
   </div>
   <!--container end-->
 
@@ -377,7 +375,6 @@
   <script src="./assets/vendor/jquery-1.8.3.min.js"></script>
   <script src="./assets/owlcarousel/assets/owlcarousel/owl.carousel.js"></script>
   <!-- vendors -->
-  <!-- <script src="./assets/vendors/highlight.js"></script> -->
   <script src="./assets/js/script.js"></script>
 </body>
 
